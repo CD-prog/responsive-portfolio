@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-sm">
+<!-- Responsive navigation bar shows active page; takes whole width of the screen when window is very small -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <a class="navbar-brand text-monospace" style="font-size: 30px;" href="index.html">Claudiu Diaconeasa</a>
+            <div class="about-portfolio-contact">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <div class="header text-white" style="font-weight: bolder; font-size: 50px;">Portfolio</div>
+<!-- Main content of the page making use of bootstrap grid system;cards stretched to fit boxes and links to actual project page -->
+        <main class="row slide-in-elliptic-bottom-bck">
+            <div class="col d-flex  align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="images/screen-shot.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">RentSocial</h5>
+                        <p class="card-text">Search for rental listings and social events</p>
+                        <a href="https://cd-prog.github.io/RentSocial/" class="btn btn-primary">View project</a>
+                        <a href="https://github.com/CD-prog/RentSocial" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="images/trivia-night.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Trivia Night</h5>
+                        <p class="card-text">Fun trivia game with stat tracking and top scores</p>
+                        <a href="https://morning-ravine-45125.herokuapp.com/" class="btn btn-primary">View on Heroku</a>
+                        <a href="https://github.com/CD-prog/trivia-night" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="images/work-day.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Work Day Scheduler</h5>
+                        <p class="card-text">A simple calendar app for scheduling your work day</p>
+                        <a href="https://cd-prog.github.io/work-day-scheduler/" class="btn btn-primary">View project</a>
+                        <a href="https://github.com/CD-prog/work-day-scheduler" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="images/screen-shot-5.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Password Generator</h5>
+                        <p class="card-text">Password generator with user options</p>
+                        <a href="https://cd-prog.github.io/password-generator/" class="btn btn-primary">View project</a>
+                        <a href="https://github.com/CD-prog/password-generator" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            
+            <div class="col d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="images/burger.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Eat Da Burger!</h5>
+                        <p class="card-text">App that lets users input the names of burgers they'd like to eat.</p>
+                        <a href="https://safe-atoll-80103.herokuapp.com/" class="btn btn-primary">View on Heroku</a>
+                        <a href="https://github.com/CD-prog/burger" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="images/image.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Dashboard</h5>
+                        <p class="card-text">Weather app that uses OpenWeather API</p>
+                        <a href="https://cd-prog.github.io/weather-dashboard/" class="btn btn-primary">View project</a>
+                        <a href="https://github.com/CD-prog/weather-dashboard" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<!-- Sticky,responsive footer with back to top of the page option; takes whole width of the screen when window is very small -->
+        <footer class="navbar sticky-bottom navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand mx-auto text-center" href="portfolio.html">back to top</a>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
